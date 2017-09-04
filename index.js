@@ -45,7 +45,7 @@ const QUIZ = {
 const renderStartPage = () =>{
   //render start page with short overview and start button
   $('body').html(`
-      <img id="questionImage" src="/images/LaurieAnderson.jpg" alt="Laurie Anderson US Tour 1983">
+      <img id="questionImage" src="images/LaurieAnderson.jpg" alt="Laurie Anderson US Tour 1983">
 <!--  <img id="questionImage" src="http://www.jkld.com/media/photos/laurie-anderson/laurie-anderson_ustour-1983_01.jpg" alt="Laurie Anderson US Tour 1983"> -->
    <header role="banner">
       <h1>Quiz</h1>
