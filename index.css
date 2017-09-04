@@ -58,3 +58,10 @@ fieldset{
   min-height: 100%;
   min-width: 100%;
 }
+
+#correctAnswerPage{
+  background-color: (255,0,0,0.5)
+}
+#falseAnswerPage{
+  background-color: (124,252,0,.5)
+}
