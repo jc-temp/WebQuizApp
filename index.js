@@ -162,16 +162,14 @@ const checkScore = (submittedAnswer) =>{
 const popUp = (popUpAnswer) =>{
   if (popUpAnswer == 'correct'){
       console.log('correct answer!!')
-        $('main').html(`
-          <main role="main" id="correctAnswerPage">
-        <section role="region">
+        $('section').html(`
+        <section role="region" id="correctAnswerPage">
           <h2>Correct!!</h2>
           <h3>You have ${QUIZ.score} correct answer(s)</h3>
           <nav role="navigation">
             <input type="button" role="button" id="next" value="next">
           </nav>
         </section>
-        </main
 
     `)
     $('nav').on('click', event=>{
