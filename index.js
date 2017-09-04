@@ -45,7 +45,8 @@ const QUIZ = {
 const renderStartPage = () =>{
   //render start page with short overview and start button
   $('body').html(`
-  <img id="questionImage" src="/images/Laurie_Anderson.jpg" alt="Laurie Anderson US Tour 1983">
+      <img id="questionImage" src="/images/Laurie_Anderson.jpg" alt="Laurie Anderson US Tour 1983">
+<!--  <img id="questionImage" src="http://www.jkld.com/media/photos/laurie-anderson/laurie-anderson_ustour-1983_01.jpg" alt="Laurie Anderson US Tour 1983"> -->
    <header role="banner">
       <h1>Quiz</h1>
     </header>
@@ -69,7 +70,7 @@ const renderStartPage = () =>{
 }
 
 const renderQuestionPage = (question) =>{
-    $('body').append(`
+    $('body').html(`
      <img id="questionImage" src="${question.imageUrl}" alt="${question.imageAlt}">
     <header role="banner">
         <h1>Quiz</h1>
@@ -121,7 +122,7 @@ const renderQuestionPage = (question) =>{
 
 const renderFinalPage = () =>{
   // render final page with final score and start button
-  $('body').append(`
+  $('body').html(`
   <img id="finalImage" src="https://dl.dropboxusercontent.com/s/4lpz6lkda8s6gny/Tracey_Emin.jpg?dl=0" alt="Tracy Emin's installation of her bed">
    <header role="banner">
       <h1>Quiz</h1>
