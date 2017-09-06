@@ -32,7 +32,7 @@ const QUESTIONS_STORE = [
    {question:"Who created this sculpture?", answer0: "Mike Kelley", answer1: "Paul McCarthy", answer2: "The Dino Twins", answer3: "Henry Moore", correctAnswer: "1", imageUrl:"images/PaulMcCarthy.jpg", imageAlt:"An outdoor scuplture of Santa holding a butt plug"},
    {question:"Who created this performance/video piece?", answer0: "SuperFlex", answer1: "Gary Hill", answer2: " Matthew Barney", answer3: "Tony Oursler", correctAnswer: "0", imageUrl:"images/SuperFlex.jpg", imageAlt:"A McDonalds submerged in water"},
    {question:"Who created this painting?", answer0: "Tracy Emin", answer1: "Anslem Kiefer", answer2: " Kara Walker", answer3: "Chris Ofili", correctAnswer: "3", imageUrl:"images/ChrisOfili.jpg", imageAlt:"A painting of a black woman, painted in a suggestive manner, with blotches of cow dung on the canvas"},
-   {question:"Who created this installation?", answer0:"Carston Höller", answer1:"Yayoi Kusama", answer2:"Olafur Eliasson", answer3:"Antony Gormley", correctAnswer:"4",
+   {question:"Who created this installation?", answer0:"Carston Höller", answer1:"Yayoi Kusama", answer2:"Olafur Eliasson", answer3:"Antony Gormley", correctAnswer:"3",
    imageUrl:"images/AntonyGormley.jpg", imageAlt:"An installation room filled with black silhouette sculptures staring into nowhere"}
   ]
 
@@ -46,7 +46,6 @@ const renderStartPage = () =>{
   //render start page with short overview and start button
   $('body').html(`
       <img id="questionImage" src="images/LaurieAnderson.jpg" alt="Laurie Anderson US Tour 1983">
-<!--  <img id="questionImage" src="http://www.jkld.com/media/photos/laurie-anderson/laurie-anderson_ustour-1983_01.jpg" alt="Laurie Anderson US Tour 1983"> -->
    <header role="banner">
       <h1>Quiz</h1>
     </header>
