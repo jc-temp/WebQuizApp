@@ -45,11 +45,11 @@ const QUIZ = {
 const renderStartPage = () =>{
   //render start page with short overview and start button
   $('body').html(`
-      <img id="questionImage" src="images/LaurieAnderson.jpg" alt="Laurie Anderson US Tour 1983">
-   <header role="banner">
+    <header role="banner">
       <h1>Quiz</h1>
     </header>
     <main role="main">
+    <img id="questionImage" src="images/LaurieAnderson.jpg" alt="Laurie Anderson US Tour 1983">
       <section role="region" id="startPage">
         <h2>How well do you know your contemporary artists?</h2>
         <nav role="navigation">
@@ -70,14 +70,12 @@ const renderStartPage = () =>{
 
 const renderQuestionPage = (question) =>{
     $('body').html(`
-     <img id="questionImage" src="${question.imageUrl}" alt="${question.imageAlt}">
     <header role="banner">
         <h1>Quiz</h1>
       </header>
       <main role="main">
+      <img id="questionImage" src="${question.imageUrl}" alt="${question.imageAlt}">
       <section role="region" id="questionPage">
-        <section role="region" id="feedback">
-        </section>
         <section role="region" id="question">
           <h3 id="currentQuestion">Question ${QUIZ.currentQuestion+1} of ${QUIZ.questions.length}</h3>
 
@@ -122,11 +120,11 @@ const renderQuestionPage = (question) =>{
 const renderFinalPage = () =>{
   // render final page with final score and start button
   $('body').html(`
-  <img id="finalImage" src="images/TraceyEmin.jpg" alt="Tracy Emin's installation of her bed">
    <header role="banner">
       <h1>Quiz</h1>
    </header>
    <main role="main">
+     <img id="finalImage" src="images/TraceyEmin.jpg" alt="Tracy Emin's installation of her bed">
       <section role="region" id="finalPage">
           <h2>You've completed the quiz.</h2>
           <h3 id="score">Your score was ${QUIZ.score} out of ${QUIZ.questions.length}</h3>
